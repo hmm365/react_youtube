@@ -1,0 +1,61 @@
+#main {
+    display: flex;
+    margin-top: 65px;
+    #aside {
+        width: 20%;
+        min-height: 100vh;
+        padding: 20px;
+        button {
+            display: block;
+            width: 100%;
+            font-size: 20px;
+            opacity: 0.6;
+            transition: all 0.3s ease-in;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 20px;
+            text-align: left;
+            margin-bottom: 5px;
+
+            span:first-child {
+                display: inline-block;
+                margin-right: 10px;
+                vertical-align: -2px;
+            }
+            &:hover {
+                opacity: 1;
+                background: rgb(28, 28, 28);
+            }
+        }
+        button.active {
+            opacity: 1;
+            background: rgb(28, 28, 28);
+        }
+    }
+    #contents {
+        width: 80%;
+        padding: 20px;
+        border-left: 1px solid var(--bg-dark-border);
+        min-height: 100vh;
+
+        h2 {
+            padding: 10px 0;
+            em {
+                color: #ff8282;
+            }
+        }
+    }
+}
+
+.videos__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    > div {
+        width: 24%;
+        height: 500px;
+        background: rgb(141, 75, 75);
+        margin-bottom: 1%;
+    }
+}
