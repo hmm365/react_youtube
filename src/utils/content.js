@@ -27,7 +27,6 @@ export const categories = [
     { name: '박효신', icon: <BsFillDropletFill /> },
     { name: '규현', icon: <BsFillBrightnessHighFill /> },
     { name: '정상수', icon: <BsMoonFill /> },
-
     { name: '아이유', icon: <BsMicFill /> },
     { name: '멜로망스', icon: <BsEmojiWinkFill /> },
     { name: '치즈(CHEEZE)', icon: <BsPersonBoundingBox /> },
