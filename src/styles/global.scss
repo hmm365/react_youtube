@@ -2,8 +2,8 @@
 @import './fonts.scss';
 @import './header.scss';
 @import './main.scss';
-// 변수 설정
-:root {
+@import './loader.scss'; // 변수 설정
+:root  {
     --white: #fff;
     --black: #000;
     --bg-light: #f0eeeb;

@@ -20,7 +20,7 @@ const VideoCard = ({
                     {snippet.channelTitle}
                 </Link>
             </div>
-        </div>
+        </div>  
     )
 }
 

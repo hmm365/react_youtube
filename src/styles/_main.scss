@@ -56,6 +56,7 @@
 
     .box {
         background: #0e0e0e;
+        margin-bottom: 20px;
         > a {
             display: block;
         }
@@ -95,17 +96,50 @@
         }
     }
 }
+#channelConts {
+    margin-top: 100px;
+    height: 100vh;
+    .channer__header {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-position: center center;
+    }
+    .channer__info {
+        display: flex;
+        padding: 20px 5% 30px 5%;
+        > img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
 
-.videoConts {
+        > div {
+            > h3 {
+                font-size: 30px;
+            }
+            > span {
+                display: block;
+                opacity: 0.8;
+            }
+        }
+    }
+    .channer__videos {
+        padding: 0 5%;
+    }
+}
+
+#videoConts {
     margin-top: 100px;
     height: 100vh;
     .container {
-        width: 96%;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
     }
-    .videoRight {
+    .videoLeft {
         width: 73%;
         display: flex;
         flex-wrap: wrap;
@@ -122,16 +156,33 @@
                 height: 100%;
             }
         }
-        .video__title {
+        .video__info {
             width: 100%;
             // background: #eee;
             height: 100px;
             margin-top: 20px;
+            .video__title {
+                font-size: 20px;
+                line-height: 1.6;
+            }
+            .video__desc {
+                opacity: 0.6;
+                font-size: 16px;
+                span {
+                    float: right;
+                    opacity: 0.8;
+                    font-size: 14px;
+                }
+            }
         }
     }
-    .videoLeft {
+    .videoRight {
         width: 25%;
-        background: #fff;
+        .videos__inner {
+            .box {
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -164,7 +215,7 @@
             display: flex;
             flex-wrap: wrap;
         }
-        .videoRight {
+        .videoLeft {
             width: 100%;
             margin-bottom: 20px;
             .video__player {
@@ -174,9 +225,14 @@
                 width: 100%;
             }
         }
-        .videoLeft {
+        .videoRight {
             width: 100%;
             height: 200px;
+            .videos__inner {
+                .box {
+                    width: 49%;
+                }
+            }
         }
     }
 }
